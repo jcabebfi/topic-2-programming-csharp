@@ -29,6 +29,11 @@
             if (height < 0)
                 Console.WriteLine("Error: Height must be positive.");
 
+            Console.WriteLine($@"------------------------
+Your Personal Details:
+Name: {name}
+Age: {age}
+Height: {height} meters");
             //conversion
             double doubleAge = Convert.ToDouble(age);
             int roundedHeight = Convert.ToInt32(height);
@@ -44,8 +49,10 @@
             else
                 Console.WriteLine("Legal Drinking Age Verification:\nSorry, you are underage for drinking.\n");
 
-            string personalInfo = $"Personal Details Presentation: {name}, {age}, {height} meters tall.";
-            Console.WriteLine(personalInfo);
+            string personalInfo = $"Personal Details Presentation: {name}, {age}, {height} meters tall.\n";
+            Console.WriteLine($@"{personalInfo}
+------------------------
+Thank you for using Your Personal Information System!");
         }
     }
 }
