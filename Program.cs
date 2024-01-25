@@ -36,7 +36,6 @@ Age: {age}
 Height: {height} meters");
             //conversion
             double doubleAge = Convert.ToDouble(age);
-            int roundedHeight = Convert.ToInt32(height);
             
             //check if user is a minor or adult
             if (doubleAge >= 18)
